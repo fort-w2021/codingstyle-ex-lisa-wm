@@ -1,7 +1,3 @@
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# WEEK 1 EX REFACTOR-DRY
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 # PREREQUISITES ----------------------------------------------------------------
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -32,7 +28,7 @@ compute_confint <- function(x) {
   sd_x <- sd(x)
   n_x <- length(x)
   half_width_x <- 1.96 * sd_x / sqrt(n_x)
-
+  
   c(mean_x - half_width_x, mean_x + half_width_x)
   
 }
