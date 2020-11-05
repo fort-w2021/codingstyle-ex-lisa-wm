@@ -4,11 +4,7 @@
 
 # PREREQUISITES ----------------------------------------------------------------
 
-# Working directory
-
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
-# Packages
 
 library(tidyverse)
 
