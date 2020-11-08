@@ -1,6 +1,7 @@
+library(here)
+load(here("attic", "mengen.RData"))
 ### DATENSATZ BEREINIGEN UND GESAMTDATENSATZ ERSTELLEN.
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-load("attic/mengen.RData")
+# load("attic/mengen.RData")
 # Schritt 1. Mengen und Preise jeweils um nicht benoetigte Spalten ausserhalb der Zeitreihe
 # reduzieren. Hierdurch 8 statt 16 Spalten.
 Mengen_spaltenreduziert<-Mengen[,c(2,3,4,5,6,7,8,9,10,11,12)]

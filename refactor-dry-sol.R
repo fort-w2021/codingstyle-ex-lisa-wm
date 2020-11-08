@@ -1,13 +1,15 @@
 # PREREQUISITES ----------------------------------------------------------------
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 library(tidyverse)
 
 # UTILITY FUNCTIONS ------------------------------------------------------------
 
-# Function to compute 95% confidence interval based on normal distribution
-# Quantile/significance level could be added as an argument
+#' Compute 95% confidence interval for the mean for a univariate Gaussian data,
+#' assuming unknown variance
+#'
+#' @param x A numeric vector
+#' @return A vector of length two, containing the lower and upper bounds of the 
+#' confidence interval as first and second entry, respectively
 
 compute_confint <- function(x) {
   

@@ -1,10 +1,9 @@
 # PREREQUISITES ----------------------------------------------------------------
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 library(tidyverse)
+library(here)
 
-load("attic/mengen.RData")
+load(here("attic", "mengen.RData"))
 
 # DATA PRE-PROCESSING ----------------------------------------------------------
 
