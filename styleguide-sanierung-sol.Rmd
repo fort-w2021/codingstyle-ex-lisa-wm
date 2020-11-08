@@ -1,19 +1,10 @@
-## R Markdown
+## Sanierungsfall
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+![](https://media.giphy.com/media/u6O8HzquWkXsc/giphy.gif)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+b) Since this beautiful peace of code was cobbled together in our infant days of R use, it doesn't even contain functions or the like. Duplicate code and inconsistent naming, plus eye-watering ugliness, however, show strongly. It also suffers from a
+complete lack of generality (as opposed to the speculative over-generalization), subsetting by col numbers etc.
+Just using tidyverse makes a lot of difference. For cleaning the bottom part effectively the entire procedure would probably need to be rethought.
 
-```{r cars}
-summary(cars)
-```
+c) Doesn't deserve a full 10 but I'll give it 9 for not making me want to tear my eyeballs out.
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
