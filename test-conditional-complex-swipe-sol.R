@@ -5,9 +5,6 @@ context("tinder game strong")
 # Set up all relevant combinations of inputs the functions needs to be able to
 # handle
 
-# But bit of a circular conclusion - putting in the desired output is just
-# equivalent to applying the function itself.........
-
 likes <- list(
   c("penguins", "FORTRAN",  "casual sex"),
   c("dogs", "yoga", "Markus Söder")
@@ -26,12 +23,10 @@ test_profiles <- expand.grid(
 )
 
 scenarios <- merge(test_swipers, test_profiles, by = NULL) %>% 
-  mutate(swipe_right = FALSE)
+  mutate(swipe_r = FALSE)
 
-scenarios <- scenarios %>% 
-  mutate(swipe_right = ifelse(
-    
-  ))
+# swipe_r would now have to be filled w/ desired outcomes, but how so w/o
+# performing the exact same steps as the swipe_right function would?
 
 # TESTS ------------------------------------------------------------------------
 
